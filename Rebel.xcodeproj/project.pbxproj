@@ -28,6 +28,7 @@
 		3FEA37A7171F94B300B409E7 /* JTPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA37A4171F94B300B409E7 /* JTPopoverBackgroundView.m */; };
 		3FEA37A8171F94B300B409E7 /* JTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA37A6171F94B300B409E7 /* JTViewController.m */; };
 		3FEA37AB171F955800B409E7 /* Rebel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09AE4DF15C5F45200ECAD10 /* Rebel.framework */; };
+		3FEA37AD171F965E00B409E7 /* JTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA37AC171F965E00B409E7 /* JTViewController.xib */; };
 		88347E6A16F213C500872A0A /* RBLHTMLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88347E6816F213C500872A0A /* RBLHTMLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88347E6B16F213C500872A0A /* RBLHTMLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88347E6916F213C500872A0A /* RBLHTMLView.m */; };
 		88347E7316F2145900872A0A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88347E7216F2145900872A0A /* WebKit.framework */; };
@@ -193,6 +194,7 @@
 		3FEA37A4171F94B300B409E7 /* JTPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPopoverBackgroundView.m; sourceTree = "<group>"; };
 		3FEA37A5171F94B300B409E7 /* JTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTViewController.h; sourceTree = "<group>"; };
 		3FEA37A6171F94B300B409E7 /* JTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTViewController.m; sourceTree = "<group>"; };
+		3FEA37AC171F965E00B409E7 /* JTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTViewController.xib; sourceTree = "<group>"; };
 		88347E6816F213C500872A0A /* RBLHTMLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLHTMLView.h; sourceTree = "<group>"; };
 		88347E6916F213C500872A0A /* RBLHTMLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLHTMLView.m; sourceTree = "<group>"; };
 		88347E7216F2145900872A0A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -322,6 +324,7 @@
 				3FEA37A6171F94B300B409E7 /* JTViewController.m */,
 				3FEA3787171F947100B409E7 /* JTAppDelegate.h */,
 				3FEA3788171F947100B409E7 /* JTAppDelegate.m */,
+				3FEA37AC171F965E00B409E7 /* JTViewController.xib */,
 				3FEA378A171F947100B409E7 /* MainMenu.xib */,
 				3FEA377C171F947100B409E7 /* Supporting Files */,
 			);
@@ -780,6 +783,7 @@
 				3FEA3780171F947100B409E7 /* InfoPlist.strings in Resources */,
 				3FEA3786171F947100B409E7 /* Credits.rtf in Resources */,
 				3FEA378C171F947100B409E7 /* MainMenu.xib in Resources */,
+				3FEA37AD171F965E00B409E7 /* JTViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

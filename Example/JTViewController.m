@@ -19,18 +19,21 @@
 +(id)viewController
 {
 	RBLViewController *controller = [[self alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
-    RBLView *customView = [[RBLView alloc] init];
-    customView.flipped = YES;
-    customView.backgroundColor = [NSColor colorWithCalibratedRed:0.459 green:0.784 blue:0.173 alpha:1.000];
-    [controller setView:customView];
+    if (!controller.view) {
+        RBLView *customView = [[RBLView alloc] init];
+        [controller setView:customView];
+    }
+    ((RBLView *)controller.view).flipped = YES;
+    ((RBLView *)controller.view).backgroundColor = [NSColor colorWithCalibratedRed:0.459 green:0.784 blue:0.173 alpha:1.000];
     return controller;
 }
 
-- (void)viewWillAppear
+- (void)viewDidLoad
 {
-    [super viewWillAppear];
+    [super viewDidLoad];
     [self configureView];
 }
+
 
 - (void)viewWillDisappear
 {
@@ -108,10 +111,9 @@
 
 - (RBLViewController *)viewControllerForPopover
 {
-    RBLView *customView = [[RBLView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
-    customView.backgroundColor = [NSColor colorWithCalibratedRed:0.839 green:0.122 blue:0.173 alpha:1.000];
-    RBLViewController *viewController = [RBLViewController viewController];
-    [viewController setView:customView];
+    JTViewController *viewController = [JTViewController viewController];
+    viewController.view.frame = CGRectMake(0, 0, 300, 300);
+    ((RBLView *)viewController.view).backgroundColor = [NSColor colorWithCalibratedRed:0.839 green:0.122 blue:0.173 alpha:1.000];
     return viewController;
 }
 

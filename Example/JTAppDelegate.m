@@ -38,7 +38,9 @@
 
 - (void)displayCustomController
 {
-    _customController = [JTViewController viewController];
+    if (!_customController) {
+        _customController = [JTViewController viewController];
+    }
     _customController.view.frame = _viewController.view.bounds;
     [_viewController.view addSubview:_customController.view];
 }
